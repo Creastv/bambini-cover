@@ -4,6 +4,7 @@
       <img class="logo" :alt="desc" src="./assets/logo.png" />
       <p class="title">{{ title }}</p>
       <h1 class="desc">{{ desc }}</h1>
+      <Form />
       <div class="facebook-info">
         <p>
           <b>{{ facebook.descFacebook }}</b>
@@ -94,7 +95,11 @@
 </template>
 
 <script>
+import Form from "./components/Form.vue";
 export default {
+  components: {
+    Form
+  },
   data() {
     return {
       title: "Już wkrótce otwarcie!",
@@ -126,7 +131,7 @@ body {
   overflow: hidden;
 }
 .contaner {
-  padding: 20px;
+  padding: 0 20px;
   width: 100%;
   height: 100vh;
 }
@@ -145,25 +150,22 @@ body {
   font-size: 71px;
   margin: 0;
   padding: 0;
-  color: #2f2f35;
+  color: #464646;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .desc {
   font-size: 21px;
   margin: 0;
   padding: 0;
   color: #179ad7;
+  margin-bottom: 0px;
 }
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 41px;
   }
 }
-.facebook-info {
-  margin: 30px 0;
-}
-
 .facebook-info a {
   color: #76c16b;
   display: flex;
