@@ -53,8 +53,8 @@ export default {
   data() {
     return {
       inf: {
-        title: "Zostaw swojego maila",
-        desc: "poinformujemy cię o rozpoczęciu zapisów!"
+        title: "Zostaw adres mailowy",
+        desc: "poinformujemy Cię o rozpoczęciu zapisów!"
       },
       errors: [],
       personFEmail: null,
@@ -91,8 +91,8 @@ export default {
           this.send();
           this.removeForm = true;
           this.inf = {
-            title: "Dziękujemy za wypełnienie formularza",
-            desc: "jak tylko zaczniemy zapisy poinformujemy Ciebie"
+            title: "Dziękujemy za pozostawienie adresu mailowego.",
+            desc: "Jak tylko ruszą zapisy, poinformujemy Cię."
           };
         } else {
           alert("error");
